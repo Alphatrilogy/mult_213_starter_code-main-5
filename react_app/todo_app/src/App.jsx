@@ -1,8 +1,7 @@
 import './App.css';
 import { useState } from 'react';
-import viteLogo from '/vite.svg';
 import { Header } from './Header';
-import reactLogo from './assets/react.svg';
+import { Footer } from './footer';
 
 function App() {
   // Define the TODO models
@@ -81,18 +80,7 @@ function App() {
         </section>
       </main>
 
-      <footer>
-        <p className="read-the-docs">
-          Click on the Vite (the build tool) and React (the frontend framework) logos to learn more
-        </p>
-
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </footer>
+<Footer message="How many tasks" />
     </>
   )
 }
